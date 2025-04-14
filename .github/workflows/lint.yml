@@ -7,6 +7,6 @@ jobs:
     name: Ansible Lint
     runs-on: ubuntu-24.04
     steps:
-      - user: actions/checkout@v4
+      - uses: actions/checkout@v4
       - name: Run ansible-lint
-        user: ansible/ansible-lint@main
+        uses: ansible/ansible-lint@main
